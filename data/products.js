@@ -1,0 +1,61 @@
+export const products = [
+  {
+    id: 1,
+    name: 'Studio Premium T-Shirt',
+    description: '100% organic cotton premium quality',
+    price: 3500,
+    category: 'apparel',
+    image: '👕',
+    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+    stock: 50,
+  },
+  {
+    id: 2,
+    name: 'Studio Snapback Cap',
+    description: 'Adjustable snapback with embroidered logo',
+    price: 1500,
+    category: 'accessories',
+    image: '🧢',
+    stock: 30,
+  },
+  {
+    id: 3,
+    name: 'Studio Hoodie',
+    description: 'Cozy fleece hoodie perfect for all seasons',
+    price: 5500,
+    category: 'apparel',
+    image: '🎽',
+    sizes: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+    stock: 25,
+  },
+  {
+    id: 4,
+    name: 'Studio Coffee Mug',
+    description: 'Ceramic mug with custom design',
+    price: 1200,
+    category: 'drinkware',
+    image: '☕',
+    stock: 100,
+  },
+  {
+    id: 5,
+    name: 'Studio Sticker Pack',
+    description: '5 vinyl stickers - waterproof & durable',
+    price: 800,
+    category: 'accessories',
+    image: '🎨',
+    stock: 200,
+  },
+  {
+    id: 6,
+    name: 'Studio Tote Bag',
+    description: 'Eco-friendly canvas tote bag',
+    price: 2000,
+    category: 'accessories',
+    image: '👜',
+    stock: 40,
+  },
+];
+
+export const getProductById = (id) => products.find((p) => p.id === id);
+export const getProductsByCategory = (category) => products.filter((p) => p.category === category);
